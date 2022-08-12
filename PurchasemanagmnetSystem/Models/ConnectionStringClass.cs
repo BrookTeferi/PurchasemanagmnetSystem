@@ -13,7 +13,8 @@ namespace PurchasemanagmnetSystem.Models
         {
 
         }
-    
+      
+
         public DbSet<Item>items { get; set; }
         public DbSet<Inssurance> inssurances { get; set; }
         public DbSet<Purchase>Products { get; set; }

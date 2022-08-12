@@ -20,11 +20,14 @@ namespace PurchasemanagmnetSystem.Controllers
         public IActionResult Display()
         {
             IList<Item> list = connectionStringClass.items.OrderByDescending(x => x.id).ToList();
+            
             return View(list);
         }
 
 
 
+
+       
         public IActionResult Index()
         {
             return View();
