@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PurchasemanagmnetSystem.Models
 {
-    public class Employee
+    public class Employee : EmployeeBase
     {
         [Key]
-        public int emp_id { get; set; }
-        public string emp_name { get; set; }
+        public override int emp_id { get; set; }
+        public override string emp_name { get; set; }
 
     }
 }
